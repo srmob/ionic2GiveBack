@@ -1,0 +1,39 @@
+
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>My Donations</ion-title>
+</ion-navbar>
+
+
+<ion-content class="cards-bg">
+  
+  <ion-card *ngFor="#item of data"  >
+
+    <img src="{{item.imgSrc}}"/>
+
+    <ion-card-content>
+      <h4 class="card-title">
+        Used Bombay Dyeing bedsheet
+        {{item.desc}}
+      </h4>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button clear small danger>
+          <ion-icon name='heart'></ion-icon>
+          Like
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button clear small secondary>
+          <ion-icon name='ios-call' secondary> </ion-icon>
+          Call
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+</ion-content>
