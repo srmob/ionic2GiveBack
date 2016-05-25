@@ -4,6 +4,11 @@
     <ion-icon name="menu"></ion-icon>
   </button>
   <ion-title>My Donations</ion-title>
+  <ion-buttons end>
+    <button  secondary  (click)="addItem($event)" >
+      <ion-icon name="ios-add-circle-outline"></ion-icon>
+    </button>
+  </ion-buttons>
 </ion-navbar>
 
 
@@ -25,15 +30,12 @@
         <button clear small danger>
           <ion-icon name='ios-heart-outline'></ion-icon>
           Likes
-        </button>
+        </button> <ion-badge secondary>1</ion-badge>
       </ion-col>
       
       <ion-col text-center>
-       
-          
-           
-            To share..<ion-icon name="ios-share-outline" item-left></ion-icon>
-            <ion-badge item-right>4</ion-badge>
+            To share<ion-icon name="ios-arrow-dropright" item-right><ion-badge>4</ion-badge></ion-icon>
+
        
       </ion-col>
     </ion-row>

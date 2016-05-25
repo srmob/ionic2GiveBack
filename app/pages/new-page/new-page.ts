@@ -1,5 +1,6 @@
 
 import {Page, NavController, NavParams} from 'ionic-angular';
+import { AddDonationPage } from '../AddDonationPage/AddDonation';
 
 
 @Page({
@@ -15,4 +16,9 @@ export class DonationPage {
       { imgSrc: '/img/books.jpg', desc: "Books" }
     ];
   
+  
+  addItem() {
+  	console.log("Add Page clicked")
+    this.nav.push(AddDonationPage)
+  }
 }
