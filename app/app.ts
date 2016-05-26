@@ -3,6 +3,7 @@ import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 import {DonationPage} from './pages/new-page/new-page';
+import {AllDonationPage} from './pages/AllDonationPage/AllDonations';
 
 
 @App({
@@ -25,7 +26,8 @@ class MyApp {
     this.pages = [
       { title: 'Hello Ionic1', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
-      { title: 'My Donations', component: DonationPage }
+      { title: 'My Donations', component: DonationPage },
+      { title: 'New Donations', component: AllDonationPage }
     ];
   }
 

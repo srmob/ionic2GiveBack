@@ -3,12 +3,7 @@
   <button menuToggle>
     <ion-icon name="menu"></ion-icon>
   </button>
-  <ion-title>My Donations</ion-title>
-  <ion-buttons end>
-    <button  secondary  (click)="addItem($event)" >
-      <ion-icon name="ios-add-circle-outline"></ion-icon>
-    </button>
-  </ion-buttons>
+  <ion-title>Available Donations</ion-title>
 </ion-navbar>
 
 
@@ -20,7 +15,7 @@
 
     <ion-card-content>
       <h4 class="card-title">
-        Used Bombay Dyeing bedsheet
+        Used Bombay Dyeing bedsheets
         {{item.desc}}
       </h4>
     </ion-card-content>
@@ -32,9 +27,11 @@
           Likes
         </button> <ion-badge secondary>1</ion-badge>
       </ion-col>
-      
+
       <ion-col text-center>
-           <ion-badge light> to share 4</ion-badge>
+       <button clear small danger>
+          <ion-icon name='ios-heart-outline'></ion-icon>
+          Call</button>
       </ion-col>
     </ion-row>
 
